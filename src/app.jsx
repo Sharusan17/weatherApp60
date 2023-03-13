@@ -11,7 +11,7 @@ export function App() {
 
 
       <div class="city_selection">
-        <img src="" width="35em" class="logo" alt="Vite logo" />
+        <img src="" width="35em" class="logo" alt="City Selection" />
         
         <select id="city-select">
                 <option value="London">London</option>
@@ -23,7 +23,7 @@ export function App() {
 
 
       <div class="weather_img">
-        <img src="src/sunimage.png" width="100em" class="logo" alt="Vite logo" />
+        <img src="src/sunimage.png" width="100em" class="logo" alt="City Selection" />
       </div>
 
 
