@@ -7,15 +7,23 @@
   background-image: url("background_sunrise.gif");
   background-repeat:repeat;
   border:1px solid #c20202;
+  position: relative;
+}
 
+#city-select{
+  appearance: none;
+  padding: 0 1em;
+  background-color: var(--darkgray);
 }
 
 .city_selection{
-  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.weather_img{
-  padding-top: 1px;
+.center{
+  padding-top: 3.5rem;
 }
 
 .day-forecast{
@@ -42,8 +50,4 @@
 .card {
   font-size: 30px;
   padding-bottom: 6em;
-}
-
-.read-the-docs {
-  color: #888;
 }

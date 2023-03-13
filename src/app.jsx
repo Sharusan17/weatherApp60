@@ -9,9 +9,9 @@ export function App() {
     <>
 
 
-
+    <div class="body">
       <div class="city_selection">
-        <img src="" width="35em" class="logo" alt="City Selection" />
+        <img id="pinpoint_img" src="src/pinpoint.gif" width="40em" class="logo" alt="City Selection" />
         <select value={city} onInput={(e) => setCity(e.target.value)} id="city-select">
                 <option value="London">London</option>
                 <option value="New York">New York</option>
@@ -20,15 +20,17 @@ export function App() {
         </select>
       </div>
 
-
-      <div class="weather_img">
-        <img src="src/sunimage.png" width="100em" class="logo" alt="City Selection" />
+      <div class="center">
+        <div class="weather_img">
+          <img src="src/sunimage.png" width="100em" class="logo" alt="City Selection" />
+        </div>
+        <div class="card">    
+          <FetchWeather city={city}/>
+        </div>
       </div>
 
 
-      <div class="card">    
-        <FetchWeather city={city}/>
-      </div>
+      
       
       <div class="day-forecast">
         <a href="#Monday">Monday</a>
@@ -40,7 +42,7 @@ export function App() {
         <a href="#Sunday">Sunday</a>
       </div>
 
-
+    </div>
     </>
   )
 }
