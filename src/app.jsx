@@ -3,7 +3,7 @@ import './app.css'
 import FetchWeather from './fetch/fetchWeather'
 
 export function App() {
-  const [count, setCount] = useState(0)
+  const [city, setCity] = useState("London")
 
   return (
     <>
@@ -12,8 +12,7 @@ export function App() {
 
       <div class="city_selection">
         <img src="" width="35em" class="logo" alt="City Selection" />
-        
-        <select id="city-select">
+        <select value={city} onInput={(e) => setCity(e.target.value)} id="city-select">
                 <option value="London">London</option>
                 <option value="New York">New York</option>
                 <option value="Paris">Paris</option>
@@ -28,7 +27,7 @@ export function App() {
 
 
       <div class="card">    
-        <FetchWeather />
+        <FetchWeather city={city}/>
       </div>
       
       <div class="day-forecast">
