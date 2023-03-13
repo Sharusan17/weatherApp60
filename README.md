@@ -10,7 +10,7 @@ A brief description of what this project does and who it's for
 - [@Khirani1](https://github.com/Khirani1)
 - [@Ibrahim Haji Abdi](https://github.com)
 - [@lewis-ljh](https://github.com/lewis-ljh)
-- [@Mohammad](https://github.com/Khirani1)
+- [@Mohammad](https://github.com)
 
 
 ## Installation
