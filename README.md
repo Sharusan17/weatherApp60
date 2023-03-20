@@ -22,6 +22,7 @@ A weather app for elderly people with simplicity and clear GUI for them to under
 **0. Before doing any of this, if you're using your own laptop/desktop, make sure you've got the latest versions of node and npm installed :**
 
 https://nodejs.org/en/download/package-manager - (Link For nodejs Download)
+
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm - (Link for npm Download)
 ```sh
 node -v
