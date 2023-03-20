@@ -1,0 +1,2 @@
+1.) WeatherCard() generates all five weather cards -> gets weather(mid-day?) from FetchWeather({day})
+2.) WeatherCard() gets days past current day onwards -> fetch
