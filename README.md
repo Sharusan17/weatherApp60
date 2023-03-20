@@ -35,7 +35,7 @@ npm -v
 
 ```sh
 git clone --depth 1 https://github.com/Sharusan17/weatherApp60.git
-cd weatherapp
+cd weatherApp60
 ```
 
 **2. Make it your own :**
