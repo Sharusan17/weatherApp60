@@ -16,7 +16,7 @@ const FetchWeather = ({city}, {day = new Date().toLocaleString('en-GB', {weekday
 
     const parser = (json) => {
         const temp_c = json['main']['temp'];
-        const precipitation = json['rain']?.['1h'];
+        const precipitation = json['rain']?.['1h'] | 0;
         const windSpeed = json['wind']['speed'];
         const iconId = json['weather'][0]['icon'];
         setTemp(Math.round(temp_c));
