@@ -9,10 +9,27 @@
   position: relative;
 }
 
+#clickbtn{
+  margin-left: 5px;
+  font-size: 10px;
+  color: white;
+  background-color: rgba(61, 61, 61, 0.7);
+  height: 27px;
+  width: 65px;
+  border: 1px solid rgb(61, 61, 61);
+}
+
+#clickbtn:hover{
+  color: rgb(230, 65, 65);
+  height: 30px;
+}
+
 #city-select{
-  appearance: none;
-  padding: 0 1em;
-  background-color: var(--darkgray);
+  background-color: rgba(87, 87, 87, 0.185);
+  border: 1px solid rgb(61, 61, 61);
+  padding-left: 1em;
+  font-size: 15px;
+  width: 120px;
 }
 
 .city_selection{

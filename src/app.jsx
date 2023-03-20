@@ -22,7 +22,7 @@ export function App() {
                 <option value="Paris">Paris</option>
                 <option value="Tokyo">Tokyo</option> */}
         </input>
-        <button onClick={handleClick}>click</button>
+        <button id='clickbtn' onClick={handleClick}>Click</button>
       </div>
       <FetchWeather city={city}/>
       <WeatherCard city={city}/>
