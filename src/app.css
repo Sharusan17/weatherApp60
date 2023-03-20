@@ -4,9 +4,20 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-image: url("background_sunrise.gif");
   background-repeat:repeat;
   position: relative;
+}
+
+.day{
+  background-image: url('background_sunrise.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
+.night{
+  background-image: url('background_night.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
 }
 
 #clickbtn{
