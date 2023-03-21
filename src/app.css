@@ -7,13 +7,15 @@
   background-repeat:repeat;
   position: relative;
 }
-
+/*This is the background of the app during the day. We decided on having a different 
+background for day and night as it aids our target audeince of what the weather is 
+like outside e.g. when it turns night it usually gets colder etc*/
 .day{
   background-image: url('background_sunrise.gif');
   background-repeat: no-repeat;
   background-position:center center;
 }
-
+/*The background for night which will automatically change*/
 .night{
   background-image: url('background_night.gif');
   background-repeat: no-repeat;
@@ -139,17 +141,20 @@
   margin-top: 5px;
   margin-bottom: 0;
 }
-
+/*This positions the windspeed and precipation on the screen*/
 .otherdata{
   padding-left: 2em;
   padding-right: 2em;
 }
+/*This positions the precipation Text/Image more accurately from where it was positioned before
+This was neccessary so we could get it exactly where we want*/
 .otherdata #precipation{
   float:right;
   font-size: 16px;
   color: white;
 }
-
+/*This positions the windspeed Text/Image more accurately from where it was positioned before
+This was neccessary so we could get it exactly where we want*/
 .otherdata #windspeed{
   float:left;
   font-size: 16px;
@@ -165,8 +170,8 @@
   color: white; 
   font-weight: bold;
 }
+
 .modal {
-  
   display: flex;
   justify-content: center; 
   position: absolute;
