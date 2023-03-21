@@ -29,6 +29,9 @@ node -v
 npm -v
 ```
 
+**0.1. If doesn't work, you may have to update nodejs :**
+
+https://blog.hubspot.com/website/update-node-js - (Visit to update node versions)
 ## Installation
 
 **1. Clone this repository :**
@@ -89,7 +92,10 @@ npm start
 > This simply serves up the contents of `./build`. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you'll also need to restart it to see any changes you've made to the code in `src`.
 
 
-## Quick Boilerplate Overview
+## Not Working?🤔
+https://blog.hubspot.com/website/update-node-js - (Visit this to update node)
+
+## Quick Overview
 
 - The initial run will display the iPhone version (iPhone 6/7 Plus screen size); however, if you modify the path on the url bar by adding "/ipad", you can view the tablet version (iPad Air screen size).
 
