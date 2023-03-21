@@ -160,19 +160,22 @@ This was neccessary so we could get it exactly where we want*/
   font-size: 16px;
   color: white;
 }
-
+/*This covers the 'What are these' help link. We placed it near the windspeed and precipation
+so our target audeince will associate it with the help for the two values/images*/
 .box a {
   font-size: 20%;
   position:absolute;
   top: 65%;
   left: 40%;
   font-size: 8px;
-  color: white; 
-  font-weight: bold;
+  color: white; /*The writing is in white to be clear on both backgrounds*/
+  font-weight: bold; /*To make it more clear for the elderly audience as poor sight is associated with
+  our target audience*/
 }
-
+/*We made the pop up box transparent as we felt it made the site look more
+  profesional and you can still see key information through the box*/
 .modal {
-  display: flex;
+  display: flex; 
   justify-content: center; 
   position: absolute;
   font-size:15px;
@@ -186,6 +189,8 @@ This was neccessary so we could get it exactly where we want*/
   opacity: 0;
   
 }
+/*More positioning on the pop up box to centre and it and place exactly where
+we wanted*/
 .content {
   position: absolute;
   width: 200px;
