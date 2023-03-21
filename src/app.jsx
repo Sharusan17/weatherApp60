@@ -3,6 +3,16 @@ import './app.css'
 import FetchWeather from './fetch/fetchWeather'
 import WeatherCard from './fetch/weatherCards';
 
+var now = new Date();
+if (now.getHours() > 4 && now.getHours() <= 7) {
+  document.body.className = " sunrise";
+} 
+else if (now.getHours() > 7 && now.getHours() < 15) {
+  document.body.className = " day";
+}
+else {
+  document.body.className = " night";
+}
 
 export function App() {
   const [city, setCity] = useState("London")

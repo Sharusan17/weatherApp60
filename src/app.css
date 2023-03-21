@@ -1,14 +1,37 @@
+/*General formatting/positioning of search bar,current temp etc*/
 #app {
   height: 500px;
   width: 300px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-  background-image: url("background_sunrise.gif");
+  text-align: center; /*This puts the current temp and icon right in the centre.
+  The reason for this is because we want this to be the main info we want to get across,
+  therfore making it centre of attention and easy to find/understand. */
   background-repeat:repeat;
   position: relative;
 }
+/*This is the background of the app during the day. We decided on having a different 
+background for sunrise, day and night as it aids our target audeince of what the weather is 
+like outside e.g. when it turns night it usually gets colder etc*/
+.sunrise{
+  background-image: url('background_sunrise.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+/*The background for day which will automatically change*/
+.day{
+  background-image: url('background_day.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+/*The background for night which will automatically change*/
+.night{
+  background-image: url('background_night.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
 
+/*Positions and formats the click button for submitting location*/
 #clickbtn{
   margin-left: 5px;
   font-size: 10px;
@@ -18,14 +41,16 @@
   width: 65px;
   border: 1px solid rgb(61, 61, 61);
 }
-
+/*When hovering over click this emphasises it and makes it clear to the user what they're about to do */
 #clickbtn:hover{
   color: rgb(230, 65, 65);
-  height: 30px;
+  height: 30px; 
 }
 
+/*Positioning and formatting for the search bar*/
 #city-select{
-  background-color: rgba(87, 87, 87, 0.185);
+  background-color: rgba(87, 87, 87, 0.185); /*Made transparent so the user can see more clearly
+  what they are typing*/
   border: 1px solid rgb(61, 61, 61);
   padding-left: 1em;
   font-size: 15px;
@@ -38,48 +63,30 @@
   top: 0;
 }
 
+/*Positioning and formatting for name of the user inputted city*/
 #city_name{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 40px;
+  color: white; /*We choose white due to the high contrast between the colour and our backgrounds*/
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*Font is clear*/
+  font-size: 40px;/*Font needs to be big to suit our target audience*/
   font-weight: 500;
 }
-
+/*More accurate positioning for the body of the app*/
 .center{
   padding-top: 3.5rem;
 }
-
+/*More accurate positioning for the main body of the app*/
 .body{
   margin-left: -1.5em;
   margin-right: -1.5em;
 }
 
+/*Formats and positons the next 5 days forcast*/
 .day-forecast{
   margin-top: 6.5rem;
   overflow: auto;
   display: flex;
   font-size: 10px;
 }
-
-/* width */
-::-webkit-scrollbar {
-  height: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 
 .day-forecast a {
   display: inline-block;
@@ -88,7 +95,7 @@
   padding: 10px;
   text-decoration: none;
 }
-
+/*Hover function to emphasise which day and temp the user is looking at*/
 .day-forecast  a:hover {
   color: #c20202;
 }
@@ -110,16 +117,18 @@
   max-height: 100%;
 }
 
+/*Formating,Sizing and positioning for the day overviews*/
 .day-card{
-  border: 2px solid orange;
+  border: 2px solid orange; /*Orange is for high contrast to make it easier to see/understand*/
   min-width: 4em;
-  height: 8em;
+  height:em;
   padding: 0 10px 0 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2); /*For professionalism*/
   transition: 0.3s;
   margin: 0 0.75% 2% 0.75%;
 }
+/*Hover function to emphasise which day and temp the user is looking at*/
 .day-card:hover {
   transform:translateY(-1.75%) rotateX(25deg) translateZ(0);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -128,59 +137,64 @@
 .card {
   font-size: 30px;
 }
-
-.weather-logo {
-  background-color:rgb(132, 185, 202);
-  border-radius: 25px;
-}
-
+/*More sizing on the next few days forcast*/
 #card-day{
   margin: 0;
   font-size: 15px;
   color: white;
 }
+/*Formatting for the temps for the next 5 day forcast*/
 #card-temp{
   margin-top: 5px;
   font-size: 15px;
   color: white;
   margin-bottom: 0;
 }
-
+/*Sizing and placement for the image of the next 5 day forcast*/
 .day-card img{
   width: 20px;
   height: 20px;
   margin-top: 5px;
   margin-bottom: 0;
 }
-
+/*This positions the windspeed and precipation on the screen*/
 .otherdata{
-  padding-left: 2em;
-  padding-right: 2em;
+  text-align: center;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
 }
+/*This positions the precipation Text/Image more accurately from where it was positioned before
+This was neccessary so we could get it exactly where we want*/
 .otherdata #precipation{
   float:right;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
-
+/*This positions the windspeed Text/Image more accurately from where it was positioned before
+This was neccessary so we could get it exactly where we want*/
 .otherdata #windspeed{
   float:left;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
-
+/*This covers the 'What are these' help link. We placed it near the windspeed and precipation
+so our target audeince will associate it with the help for the two values/images*/
 .box a {
   font-size: 20%;
   position:absolute;
   top: 65%;
   left: 40%;
   font-size: 8px;
-  color: white; 
-  font-weight: bold;
+  color: white; /*The writing is in white to be clear on both backgrounds*/
+  font-weight: bold; /*To make it more clear for the elderly audience as poor sight is associated with
+  our target audience*/
 }
+/*We made the pop up box transparent as we felt it made the site look more
+  professional and you can still see key information through the box*/
 .modal {
-  
-  display: flex;
+  display: flex; 
   justify-content: center; 
   position: absolute;
   font-size:15px;
@@ -194,19 +208,23 @@
   opacity: 0;
   
 }
+/*More positioning on the pop up box to centre and it and place exactly where
+we wanted*/
 .content {
   position: absolute;
   width: 200px;
   margin-top: 10em;
   padding: 1em;
   border-radius: 10px;
-  background: rgba(61, 61, 61, 0.7);
+  background: rgba(61, 61, 61, 0.7); /*Same colour as click button for consistancy and professionalism*/
   font-family: monospace;
 } 
 .modal:target {
   visibility: visible;
   opacity: 1;
 }
+/*This is the x for closing the box we placed it in the top right as this is usually
+where the close/x button is for most applications*/
 .box-close {
   position: absolute;
   top: 0;
