@@ -73,27 +73,6 @@ like outside e.g. when it turns night it usually gets colder etc*/
   font-size: 10px;
 }
 
-/* width */
-::-webkit-scrollbar {
-  height: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-
 .day-forecast a {
   display: inline-block;
   color: white;
@@ -152,6 +131,7 @@ This was neccessary so we could get it exactly where we want*/
   float:right;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 /*This positions the windspeed Text/Image more accurately from where it was positioned before
 This was neccessary so we could get it exactly where we want*/
@@ -159,6 +139,7 @@ This was neccessary so we could get it exactly where we want*/
   float:left;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 
 .box a {
