@@ -16,7 +16,7 @@ A weather app for elderly people with simplicity and clear GUI for them to under
 ## Set-Up Guide
 - [Installation](#installation)
 - [Development Workflow](#development-workflow)
-- [Quick Overview](#quick-boilerplate-overview)
+- [Quick Overview](#quick-overview)
 - [Extra Info](#extra-info)
 
 **0. Before doing any of this, if you're using your own laptop/desktop, make sure you've got the latest versions of node and npm installed :**
