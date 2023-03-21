@@ -3,16 +3,17 @@ import '/src/app.css'
 import { useState } from 'preact/hooks'
 
 
-const FetchWeather = ({city}, {day = new Date().toLocaleString('en-GB', {weekday: 'long'})}) => {
+const FetchWeather = ({city}) => {
     const [temp, setTemp] = useState(null)
     const [precip, setPrecip] = useState(null);
     const [wind, setWind] = useState(null);
     const [weatherIcon, setWeatherIcon] = useState(null)
+    const [validInput, setValidInput] = useState(true)
     const [weatherConditions,setWeatherConditions] = useState(null)
 
     const url = 'http://api.openweathermap.org/data/2.5/weather?q='+ city +'&units=metric&APPID=02adac3e6a991d9f737fa48145b6c2ae';
 
-    console.log("Hello")
+    console.log("Hello " + city + " " + validInput)
 
     const parser = (json) => {
         const temp_c = json['main']['temp'];
@@ -28,24 +29,31 @@ const FetchWeather = ({city}, {day = new Date().toLocaleString('en-GB', {weekday
     
     $.ajax({
         url: url,
-        success: parser,
-        error: (err) => {console.log('error message: ' + err)}
-    })
-    
+        success: (json) => {
+            parser(json)
+            setValidInput(true)
+        },
+        error: () => {
+            setValidInput(false)
+        }})
+
+    if (validInput == false) {
+        return <div class="city-error">Please enter a valid city</div>
+    }
     
     return (
         <div class="center">
             <div class="weather_img">
-            <img src={weatherIcon} width="100em" class="logo" alt="City Selection" />
+            <img src={weatherIcon} width="100em" class="weather-logo" alt="City Selection" />
             </div>
             <div class="card"> 
                 <div>
-                    <div id='city_name'>
+                    <div id='city_name' style={{textTransform: 'capitalize'}}>
                         {city}
                     </div>
-                    {/* <div class='weather_condition'>
+                    <div class='weather_condition'>
                         {weatherConditions}
-                    </div> */}
+                    </div>
                     <p style={{color:"orange",fontSize: "45px", padding:"0", margin:"0"}}>
                         {temp}
                         <span>&#176;</span>

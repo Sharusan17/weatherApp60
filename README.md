@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# weatherApp60
-=======
 
 # Weather App Group 60
 
@@ -118,4 +115,3 @@ Defining what component(s) to load for a given URL is easy and declarative. You 
 </Router>
 ```
     
->>>>>>> 8de9d283636315b63d5b4077c9e292e83f5588d0
