@@ -8,31 +8,37 @@ A weather app for elderly people with simplicity and clear GUI for them to under
 
 - [@Sharusan17](https://github.com/Sharusan17)
 - [@Khirani1](https://github.com/Khirani1)
-- [@Ibrahim Haji Abdi](https://github.com)
+- [@Ibrahim Haji Abdi](https://github.com/IbrahimHajiAbdi)
 - [@lewis-ljh](https://github.com/lewis-ljh)
-- [@Mohammad](https://github.com)
+- [@Mohammad](https://github.com/ec20355)
 
 
 ## Set-Up Guide
 - [Installation](#installation)
 - [Development Workflow](#development-workflow)
-- [Quick Boilerplate Overview](#quick-boilerplate-overview)
+- [Quick Overview](#quick-overview)
 - [Extra Info](#extra-info)
 
 **0. Before doing any of this, if you're using your own laptop/desktop, make sure you've got the latest versions of node and npm installed :**
 
+https://nodejs.org/en/download/package-manager - (Link For nodejs Download)
+
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm - (Link for npm Download)
 ```sh
 node -v
 npm -v
 ```
 
+**0.1. If doesn't work, you may have to update nodejs :**
+
+https://blog.hubspot.com/website/update-node-js - (Visit to update node versions)
 ## Installation
 
 **1. Clone this repository :**
 
 ```sh
 git clone --depth 1 https://github.com/Sharusan17/weatherApp60.git
-cd weatherapp
+cd weatherApp60
 ```
 
 **2. Make it your own :**
@@ -86,7 +92,10 @@ npm start
 > This simply serves up the contents of `./build`. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you'll also need to restart it to see any changes you've made to the code in `src`.
 
 
-## Quick Boilerplate Overview
+## Not Working?🤔
+https://blog.hubspot.com/website/update-node-js - (Visit this to update node)
+
+## Quick Overview
 
 - The initial run will display the iPhone version (iPhone 6/7 Plus screen size); however, if you modify the path on the url bar by adding "/ipad", you can view the tablet version (iPad Air screen size).
 
