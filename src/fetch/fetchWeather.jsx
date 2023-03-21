@@ -54,8 +54,8 @@ const FetchWeather = ({city}, {day = new Date().toLocaleString('en-GB', {weekday
                             {/*For windspeed and precipation we combined html for the image and then preact for the API/Live data
                             These two combine well. Using both was the right decsion as its all included within the html we could 
                             apply CSS to all.*/}
-                            <p id='windspeed'><img src="src/wind.png" width="25rem"> </img> {wind} mph</p>
-                            <p id='precipation'> <img src="src/raindrop.png" width="25rem"> </img> {precip} mm</p>
+                            <p id='windspeed'><img src="src/wind.png" width="25rem"> </img> {wind} mph</p
+                            ><p id='precipation'> <img src="src/raindrop.png" width="25rem"> </img> {precip} mm</p>
                             {/*A help box was key for us as our target audience are less tech savoy we built this using html rather
                             then through preact as again we had more option on the design due to CSS and we could tailor it more for 
                             our target audience. */}

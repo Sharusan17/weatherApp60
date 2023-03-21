@@ -135,8 +135,9 @@ like outside e.g. when it turns night it usually gets colder etc*/
 }
 /*This positions the windspeed and precipation on the screen*/
 .otherdata{
-  padding-left: 2em;
-  padding-right: 2em;
+  text-align: center;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
 }
 /*This positions the precipation Text/Image more accurately from where it was positioned before
 This was neccessary so we could get it exactly where we want*/
