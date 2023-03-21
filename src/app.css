@@ -22,6 +22,18 @@ like outside e.g. when it turns night it usually gets colder etc*/
   background-position:center center;
 }
 
+.day{
+  background-image: url('background_sunrise.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
+.night{
+  background-image: url('background_night.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
 #clickbtn{
   margin-left: 5px;
   font-size: 10px;
@@ -52,6 +64,7 @@ like outside e.g. when it turns night it usually gets colder etc*/
 }
 
 #city_name{
+  color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 40px;
   font-weight: 500;
@@ -72,27 +85,6 @@ like outside e.g. when it turns night it usually gets colder etc*/
   display: flex;
   font-size: 10px;
 }
-
-/* width */
-::-webkit-scrollbar {
-  height: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 
 .day-forecast a {
   display: inline-block;
@@ -143,8 +135,9 @@ like outside e.g. when it turns night it usually gets colder etc*/
 }
 /*This positions the windspeed and precipation on the screen*/
 .otherdata{
-  padding-left: 2em;
-  padding-right: 2em;
+  text-align: center;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
 }
 /*This positions the precipation Text/Image more accurately from where it was positioned before
 This was neccessary so we could get it exactly where we want*/
@@ -152,6 +145,7 @@ This was neccessary so we could get it exactly where we want*/
   float:right;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 /*This positions the windspeed Text/Image more accurately from where it was positioned before
 This was neccessary so we could get it exactly where we want*/
@@ -159,6 +153,7 @@ This was neccessary so we could get it exactly where we want*/
   float:left;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 /*This covers the 'What are these' help link. We placed it near the windspeed and precipation
 so our target audeince will associate it with the help for the two values/images*/
