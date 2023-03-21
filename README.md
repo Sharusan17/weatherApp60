@@ -8,9 +8,9 @@ A weather app for elderly people with simplicity and clear GUI for them to under
 
 - [@Sharusan17](https://github.com/Sharusan17)
 - [@Khirani1](https://github.com/Khirani1)
-- [@Ibrahim Haji Abdi](https://github.com)
+- [@Ibrahim Haji Abdi](https://github.com/IbrahimHajiAbdi)
 - [@lewis-ljh](https://github.com/lewis-ljh)
-- [@Mohammad](https://github.com)
+- [@Mohammad](https://github.com/ec20355)
 
 
 ## Set-Up Guide
