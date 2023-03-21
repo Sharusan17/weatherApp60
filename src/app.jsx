@@ -4,7 +4,7 @@ import FetchWeather from './fetch/fetchWeather'
 import WeatherCard from './fetch/weatherCards';
 
 var now = new Date();
-if (now.getHours() > 6 && now.getHours() < 12) {
+if (now.getHours() > 6 && now.getHours() < 15) {
   document.body.className = " day";
 } else {
   document.body.className = " night";
