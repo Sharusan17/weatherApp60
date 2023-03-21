@@ -102,7 +102,7 @@ like outside e.g. when it turns night it usually gets colder etc*/
 
 .city-error {
   padding: 9rem 0rem 10.5rem 0rem;
-  color: purple;
+  color: red;
 }
 
 .weather-card-icon-container {

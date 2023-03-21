@@ -1,6 +1,7 @@
 import { useMemo, useState } from "preact/hooks";
 import $ from 'jquery'
 
+
 const WeatherCard = ({city}) => {    
     const [json, setJson] = useState(null)
 
