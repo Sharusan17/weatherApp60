@@ -50,7 +50,7 @@ const FetchWeather = ({city}, {day = new Date().toLocaleString('en-GB', {weekday
                         {temp}
                         <span>&#176;</span>
                         <div class="otherdata">
-                            <p id='windspeed'><img src="src/wind.png" width="25rem"> </img> {wind} mph</p>
+                            <p id='windspeed'><img src="src/wind.png" width="30rem"> </img> {wind} mph</p>
                             <p id='precipation'> <img src="src/raindrop.png" width="25rem"> </img> {precip} mm</p>
                             <div class="box">
                                 <a href="#popup-box">

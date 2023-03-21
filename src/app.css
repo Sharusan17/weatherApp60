@@ -50,6 +50,7 @@
 }
 
 #city_name{
+  color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 40px;
   font-weight: 500;
@@ -69,26 +70,6 @@
   overflow: auto;
   display: flex;
   font-size: 10px;
-}
-
-/* width */
-::-webkit-scrollbar {
-  height: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 
@@ -148,12 +129,14 @@
   float:right;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 
 .otherdata #windspeed{
   float:left;
   font-size: 16px;
   color: white;
+  font-weight: 600;
 }
 
 .box a {
@@ -165,8 +148,7 @@
   color: white; 
   font-weight: bold;
 }
-.modal {
-  
+.modal {  
   display: flex;
   justify-content: center; 
   position: absolute;
