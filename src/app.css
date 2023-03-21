@@ -11,10 +11,16 @@
   position: relative;
 }
 /*This is the background of the app during the day. We decided on having a different 
-background for day and night as it aids our target audeince of what the weather is 
+background for sunrise, day and night as it aids our target audeince of what the weather is 
 like outside e.g. when it turns night it usually gets colder etc*/
-.day{
+.sunrise{
   background-image: url('background_sunrise.gif');
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+/*The background for day which will automatically change*/
+.day{
+  background-image: url('background_day.gif');
   background-repeat: no-repeat;
   background-position:center center;
 }
