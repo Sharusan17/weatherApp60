@@ -41,8 +41,6 @@ const WeatherCard = ({city}) => {
      */
     useMemo(() => getWeather(url), [city]) 
     
-    console.log("hrl")
-
     if (json == null) {
         return <div>Please select city</div>
     }
