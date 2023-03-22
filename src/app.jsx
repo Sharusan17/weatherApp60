@@ -4,12 +4,15 @@ import FetchWeather from './fetch/fetchWeather'
 import WeatherCard from './fetch/weatherCards';
 
 var now = new Date();
+/* from 4 am to 7am, it will show the sunset background */
 if (now.getHours() > 4 && now.getHours() <= 7) {
   document.body.className = " sunrise";
 } 
-else if (now.getHours() > 7 && now.getHours() < 15) {
+/* from 7 am to 7pm, it will show the day background */
+else if (now.getHours() > 7 && now.getHours() <= 19) {
   document.body.className = " day";
 }
+/* from 7 pm to 4am, it will show the night background */
 else {
   document.body.className = " night";
 }
