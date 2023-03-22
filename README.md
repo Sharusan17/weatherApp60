@@ -40,6 +40,11 @@ https://blog.hubspot.com/website/update-node-js - (Visit to update node versions
 git clone --depth 1 https://github.com/Sharusan17/weatherApp60.git
 cd weatherApp60
 ```
+**1a. Install Vite :**
+```sh
+npm -g install vite@latest
+npm create vite <project_name>
+```
 
 **2. Make it your own :**
 
@@ -48,6 +53,7 @@ rm -rf .git && git init && npm init
 ```
 
 > :information_source: Command above re-initializes the repo and sets up your NPM project.
+
 
 **2a. Make it your own (Windows):**
 
@@ -92,7 +98,7 @@ npm start
 > This simply serves up the contents of `./build`. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you'll also need to restart it to see any changes you've made to the code in `src`.
 
 
-## Not Working?🤔
+## Linux User (Not Working)?🤔
 https://blog.hubspot.com/website/update-node-js - (Visit this to update node)
 
 ## Quick Overview
