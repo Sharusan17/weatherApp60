@@ -15,6 +15,10 @@ const FetchWeather = ({city}) => {
 
     console.log("Hello " + city + " " + validInput)
 
+    /**The parser method gets the json reponse and parses the relevent information
+     * from it and sets the state of the corresponding variables to the values retrieved from
+     * the json
+     */
     const parser = (json) => {
         const temp_c = json['main']['temp'];
         const precipitation = json['rain']?.['1h'] || 0;
@@ -37,6 +41,7 @@ const FetchWeather = ({city}) => {
             setValidInput(false)
         }})
 
+    /**catches if the api call is too slow and the code runs ahead without the api call returning */
     if (validInput == false) {
         return <div class="city-error">Please enter a valid city</div>
     }
