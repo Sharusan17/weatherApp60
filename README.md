@@ -31,7 +31,7 @@ npm -v
 
 **0.1. If doesn't work, you may have to update nodejs :**
 
-https://blog.hubspot.com/website/update-node-js - (Visit to update node versions)
+https://blog.hubspot.com/website/update-node-js - (Visit to update node versions) (Linux Users)
 ## Installation
 
 **1. Clone this repository :**
@@ -43,7 +43,6 @@ cd weatherApp60
 **1a. Install Vite :**
 ```sh
 npm -g install vite@latest
-npm create vite <project_name>
 ```
 
 **2. Make it your own :**
